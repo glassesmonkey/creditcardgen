@@ -9,7 +9,6 @@ import { faker } from "@faker-js/faker";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 type CreditCardBrand = 'Visa' | 'Mastercard' | 'American Express' | 'Discover' | 'JCB' | 'Diners Club' | 'UnionPay';
 
 interface CreditCardDetails {
@@ -114,17 +113,18 @@ export function Component() {
     const cards = generateCreditCardDetails(selectedCardBrand, selectedCVV, selectedExpMonth, selectedExpYear, parseInt(selectedQuantity));
     setGeneratedCards(cards);
   };
-  //copy to clipboard
+
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text).then(() => {
       toast.success('Copied to clipboard!', {
-        autoClose: 800, // 3 seconds
+        autoClose: 800,
       });
     }, (err) => {
       console.error('Could not copy text: ', err);
       toast.error('Failed to copy text.');
     });
   };
+
   return (
     <section key="1" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#6a11cb] to-[#2575fc]">
       <div className="container mx-auto max-w-4xl px-4 md:px-6">
@@ -153,7 +153,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="card-brand">
                         Card Brand
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="card-brand" onValueChange={handleCardBrandChange}>
+                      <Select defaultValue="random" id="card-brand" onValueChange={handleCardBrandChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -189,7 +189,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="cvv">
                         CVV/CVV2
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="cvv" onValueChange={handleCVVChange}>
+                      <Select defaultValue="random" id="cvv" onValueChange={handleCVVChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -215,7 +215,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="exp-month">
                         Expiration Month
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="exp-month" onValueChange={handleExpMonthChange}>
+                      <Select defaultValue="random" id="exp-month" onValueChange={handleExpMonthChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -266,7 +266,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="exp-year">
                         Expiration Year
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="exp-year" onValueChange={handleExpYearChange}>
+                      <Select defaultValue="random" id="exp-year" onValueChange={handleExpYearChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -303,7 +303,7 @@ export function Component() {
                     <Label className="text-[#6a11cb] font-medium" htmlFor="quantity">
                       Quantity
                     </Label>
-                    <Select className="rounded-lg" defaultValue="1" id="quantity" onValueChange={handleQuantityChange} >
+                    <Select defaultValue="1" id="quantity" onValueChange={handleQuantityChange}>
                       <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                         <SelectValue placeholder="1" />
                       </SelectTrigger>
@@ -391,7 +391,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="card-brand">
                         Card Brand/Network
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="card-brand">
+                      <Select defaultValue="random" id="card-brand" onValueChange={handleCardBrandChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -418,7 +418,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="country">
                         Country
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="country">
+                      <Select defaultValue="random" id="country" onValueChange={handleCardBrandChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -447,7 +447,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="bank">
                         Bank
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="bank">
+                      <Select defaultValue="random" id="bank" onValueChange={handleCardBrandChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -474,7 +474,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="cvv">
                         CVV/CVV2
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="cvv">
+                      <Select defaultValue="random" id="cvv" onValueChange={handleCardBrandChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -500,7 +500,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="exp-month">
                         Expiration Month
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="exp-month">
+                      <Select defaultValue="random" id="exp-month" onValueChange={handleCardBrandChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -551,7 +551,7 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="exp-year">
                         Expiration Year
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="exp-year">
+                      <Select defaultValue="random" id="exp-year" onValueChange={handleCardBrandChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -584,59 +584,43 @@ export function Component() {
                       </Select>
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="grid gap-2">
-                      <Label className="text-[#6a11cb] font-medium" htmlFor="money">
-                        Money
-                      </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="money">
-                        <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
-                          <SelectValue placeholder="Random" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-[#f0f0f0] text-[#6a11cb] rounded-lg shadow-lg">
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="random">
-                            Random
-                          </SelectItem>
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="100">
-                            $100
-                          </SelectItem>
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="500">
-                            $500
-                          </SelectItem>
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="1000">
-                            $1,000
-                          </SelectItem>
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="5000">
-                            $5,000
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="grid gap-2">
-                      <Label className="text-[#6a11cb] font-medium" htmlFor="quantity">
-                        Quantity
-                      </Label>
-                      <Select className="rounded-lg" defaultValue="1" id="quantity">
-                        <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
-                          <SelectValue placeholder="1" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-[#f0f0f0] text-[#6a11cb] rounded-lg shadow-lg">
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="1">
-                            1
-                          </SelectItem>
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="2">
-                            2
-                          </SelectItem>
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="3">
-                            3
-                          </SelectItem>
-                          <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="4">
-                            4
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+                  <div className="grid gap-2">
+                    <Label className="text-[#6a11cb] font-medium" htmlFor="quantity">
+                      Quantity
+                    </Label>
+                    <Select defaultValue="1" id="quantity" onValueChange={handleCardBrandChange}>
+                      <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
+                        <SelectValue placeholder="1" />
+                      </SelectTrigger>
+                      <SelectContent className="bg-[#f0f0f0] text-[#6a11cb] rounded-lg shadow-lg">
+                        <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="1">
+                          1
+                        </SelectItem>
+                        <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="2">
+                          2
+                        </SelectItem>
+                        <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="3">
+                          3
+                        </SelectItem>
+                        <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="4">
+                          4
+                        </SelectItem>
+                        <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="5">
+                          5
+                        </SelectItem>
+                        <SelectItem className="hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]" value="6">
+                          6
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
+                  <Button
+                    className="w-full bg-[#6a11cb] text-white hover:bg-[#2575fc] focus:bg-[#2575fc] shadow-lg"
+                    type="button"
+                    onClick={handleGenerate}
+                  >
+                    Generate Cards
+                  </Button>
                 </form>
               </Card>
             </TabsContent>
