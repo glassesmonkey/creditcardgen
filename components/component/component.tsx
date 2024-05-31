@@ -153,7 +153,8 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="card-brand">
                         Card Brand
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="card-brand" onValueChange={handleCardBrandChange}>
+                      <div className="rounded-lg" id="card-brand">
+                      <Select  defaultValue="random"  onValueChange={handleCardBrandChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -184,12 +185,14 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                     <div className="grid gap-2">
                       <Label className="text-[#6a11cb] font-medium" htmlFor="cvv">
                         CVV/CVV2
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="cvv" onValueChange={handleCVVChange}>
+                      <div className="rounded-lg" id="cvv">
+                      <Select  defaultValue="random"  onValueChange={handleCVVChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -208,6 +211,7 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
@@ -215,7 +219,8 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="exp-month">
                         Expiration Month
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="exp-month" onValueChange={handleExpMonthChange}>
+                      <div className="rounded-lg" id="exp-month">
+                      <Select  defaultValue="random"  onValueChange={handleExpMonthChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -261,12 +266,14 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                     <div className="grid gap-2">
                       <Label className="text-[#6a11cb] font-medium" htmlFor="exp-year">
                         Expiration Year
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="exp-year" onValueChange={handleExpYearChange}>
+                      <div className="rounded-lg" id="exp-year">
+                      <Select  defaultValue="random"  onValueChange={handleExpYearChange}>
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -297,13 +304,15 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                   </div>
                   <div className="grid gap-2">
                     <Label className="text-[#6a11cb] font-medium" htmlFor="quantity">
                       Quantity
                     </Label>
-                    <Select className="rounded-lg" defaultValue="1" id="quantity" onValueChange={handleQuantityChange} >
+                    <div className="rounded-lg" id="quantity">
+                    <Select  defaultValue="1" onValueChange={handleQuantityChange} >
                       <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                         <SelectValue placeholder="1" />
                       </SelectTrigger>
@@ -328,6 +337,7 @@ export function Component() {
                         </SelectItem>
                       </SelectContent>
                     </Select>
+                    </div>
                   </div>
                   <Button
                     className="w-full bg-[#6a11cb] text-white hover:bg-[#2575fc] focus:bg-[#2575fc] shadow-lg"
@@ -391,7 +401,8 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="card-brand">
                         Card Brand/Network
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="card-brand">
+                      <div className="rounded-lg" id="card-brand">
+                      <Select  defaultValue="random" >
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -413,12 +424,14 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                     <div className="grid gap-2">
                       <Label className="text-[#6a11cb] font-medium" htmlFor="country">
                         Country
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="country">
+                      <div className="rounded-lg" id="country">
+                      <Select  defaultValue="random" >
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -441,13 +454,15 @@ export function Component() {
                         </SelectContent>
                       </Select>
                     </div>
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="grid gap-2">
                       <Label className="text-[#6a11cb] font-medium" htmlFor="bank">
                         Bank
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="bank">
+                      <div className="rounded-lg" id="bank">
+                      <Select  defaultValue="random" >
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -469,12 +484,14 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                     <div className="grid gap-2">
                       <Label className="text-[#6a11cb] font-medium" htmlFor="cvv">
                         CVV/CVV2
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="cvv">
+                      <div className="rounded-lg" id="cvv">
+                      <Select  defaultValue="random">
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -493,6 +510,7 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
@@ -500,7 +518,8 @@ export function Component() {
                       <Label className="text-[#6a11cb] font-medium" htmlFor="exp-month">
                         Expiration Month
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="exp-month">
+                      <div className="rounded-lg" id="exp-month">
+                      <Select  defaultValue="random" >
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -546,12 +565,14 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                     <div className="grid gap-2">
                       <Label className="text-[#6a11cb] font-medium" htmlFor="exp-year">
                         Expiration Year
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="exp-year">
+                      <div className="rounded-lg" id="exp-year">
+                      <Select  defaultValue="random" >
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -583,13 +604,15 @@ export function Component() {
                         </SelectContent>
                       </Select>
                     </div>
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="grid gap-2">
                       <Label className="text-[#6a11cb] font-medium" htmlFor="money">
                         Money
                       </Label>
-                      <Select className="rounded-lg" defaultValue="random" id="money">
+                      <div className="rounded-lg" id="money">
+                      <Select  defaultValue="random" >
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="Random" />
                         </SelectTrigger>
@@ -611,12 +634,14 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                     <div className="grid gap-2">
                       <Label className="text-[#6a11cb] font-medium" htmlFor="quantity">
                         Quantity
                       </Label>
-                      <Select className="rounded-lg" defaultValue="1" id="quantity">
+                      <div className="rounded-lg" id="quantity">
+                      <Select  defaultValue="1" >
                         <SelectTrigger className="bg-[#f0f0f0] text-[#6a11cb] hover:bg-[#e0e0e0] focus:bg-[#e0e0e0]">
                           <SelectValue placeholder="1" />
                         </SelectTrigger>
@@ -635,6 +660,7 @@ export function Component() {
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      </div>
                     </div>
                   </div>
                 </form>
