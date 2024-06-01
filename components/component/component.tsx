@@ -673,18 +673,93 @@ export function Component() {
       <div className="mt-12 px-4 md:px-6">
         <h2 className="text-2xl font-bold text-white">FAQ</h2>
         <div className="mt-4 space-y-4">
-          <details className="bg-white p-4 rounded-lg shadow-md">
-            <summary className="font-semibold text-[#6a11cb] cursor-pointer">What is this tool for?</summary>
-            <p className="mt-2 text-gray-700">This tool generates valid test credit card numbers for testing purposes, service sign-ups, and payment gateway trials.</p>
-          </details>
-          <details className="bg-white p-4 rounded-lg shadow-md">
-            <summary className="font-semibold text-[#6a11cb] cursor-pointer">How do I generate a card number?</summary>
-            <p className="mt-2 text-gray-700">Select the card brand, CVV, expiration month, and year, then click "Generate Cards". You can also choose the quantity of cards to generate.</p>
-          </details>
-          <details className="bg-white p-4 rounded-lg shadow-md">
-            <summary className="font-semibold text-[#6a11cb] cursor-pointer">Can these card numbers be used for real transactions?</summary>
-            <p className="mt-2 text-gray-700">No, these card numbers are only for testing purposes and cannot be used for real transactions.</p>
-          </details>
+        <details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">What is a Credit Card Number Generator?</summary>
+  <p className="mt-2 text-gray-700">A credit card number generator is a specialized tool that creates valid-looking credit card numbers for testing and verification purposes. These numbers are not linked to any real bank accounts or financial institutions.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">How does the Credit Card Number Generator work?</summary>
+  <p className="mt-2 text-gray-700">The generator uses Luhn's algorithm, a standard checksum used in the financial industry, to produce valid credit card numbers. It generates a dummy number that cannot be linked to an existing account but can be used for testing and verification.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Can I use the generated credit card numbers for real transactions?</summary>
+  <p className="mt-2 text-gray-700">No, the generated credit card numbers are for testing purposes only. They cannot be used for any real transactions as they are not linked to any real financial accounts.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Are the generated credit card numbers safe to use for sensitive transactions?</summary>
+  <p className="mt-2 text-gray-700">While we prioritize privacy, these numbers are designed only for testing environments. We do not recommend using them for any sensitive transactions.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">How long does it take to generate the credit card numbers?</summary>
+  <p className="mt-2 text-gray-700">The credit card numbers are generated instantly with just a single click.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Is it possible to regenerate the same set of credit card numbers at a later time?</summary>
+  <p className="mt-2 text-gray-700">No, each time the generator creates a new set of unique credit card numbers. Regenerating a previous set is not feasible.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Are there any costs associated with using this tool?</summary>
+  <p className="mt-2 text-gray-700">No, our credit card generator is completely free to use for generating dummy credit card numbers for testing needs.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">What Credit Card Number Patterns can I create?</summary>
+  <p className="mt-2 text-gray-700">Our tool allows you to generate a wide array of credit card number patterns based on different card types, issuing banks, and more. This flexibility ensures thorough testing of software responses under various scenarios.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Who can use this Credit Card Number Generator Tool?</summary>
+  <p className="mt-2 text-gray-700">This tool is useful for developers, testers, and educators:
+    <ul className="list-disc list-inside">
+      <li>Developers can integrate the generator into their testing environments to assess payment processing features and validate software responses.</li>
+      <li>Testers can create diverse payment scenarios, validating payment gateways, security measures, and transaction flows.</li>
+      <li>Educators can use the tool for academic training and demonstrations without using actual credit card details.</li>
+    </ul>
+  </p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Where can I use my generated credit card number?</summary>
+  <p className="mt-2 text-gray-700">The generated credit card numbers should only be used for testing purposes, such as testing e-commerce sites, financial software, and payment gateways. These numbers should pass pre-validation but will be declined at the credit card processing system.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">What are the benefits of using a Credit Card Number Generator?</summary>
+  <p className="mt-2 text-gray-700">Realistic Testing Scenarios: Allows testers to mimic real-world financial transactions.
+    <ul className="list-disc list-inside">
+      <li>Security Assessment: Helps assess the effectiveness of security measures.</li>
+      <li>Efficient Testing: Enables testing of payment gateways and transaction flows without compromising real customer information.</li>
+    </ul>
+  </p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">What are the limitations of using a Credit Card Number Generator?</summary>
+  <p className="mt-2 text-gray-700">
+    <ul className="list-disc list-inside">
+      <li>Legal Consequences: Using generated numbers for fraudulent purposes is illegal and can result in legal action.</li>
+      <li>Verification Checks: Many online platforms have verification procedures that may identify generated numbers as invalid.</li>
+      <li>Temporary Solution: Generated numbers are typically for one-time use and may not be suitable for ongoing transactions.</li>
+    </ul>
+  </p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Is it legal to use a Credit Card Generator?</summary>
+  <p className="mt-2 text-gray-700">Yes, using a credit card generator for legitimate purposes such as testing and educational demonstrations is legal. However, using it for fraud or any unethical activity is illegal.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Upcoming Feature: Advanced Mode</summary>
+  <p className="mt-2 text-gray-700">Soon, we will introduce an advanced mode that allows users to specify the desired card brand, expiry date, and other details. This mode will enhance the flexibility and functionality of the generator for more tailored testing scenarios.</p>
+</details>
+
         </div>
       </div>
     </section>
