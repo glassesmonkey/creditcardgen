@@ -684,6 +684,11 @@ export function Component() {
 </details>
 
 <details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Upcoming Feature: Advanced Mode</summary>
+  <p className="mt-2 text-gray-700">Soon, we will introduce an advanced mode that allows users to specify the desired card brand, expiry date, and other details. This mode will enhance the flexibility and functionality of the generator for more tailored testing scenarios.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
   <summary className="font-semibold text-[#6a11cb] cursor-pointer">Can I use the generated credit card numbers for real transactions?</summary>
   <p className="mt-2 text-gray-700">No, the generated credit card numbers are for testing purposes only. They cannot be used for any real transactions as they are not linked to any real financial accounts.</p>
 </details>
@@ -755,10 +760,7 @@ export function Component() {
   <p className="mt-2 text-gray-700">Yes, using a credit card generator for legitimate purposes such as testing and educational demonstrations is legal. However, using it for fraud or any unethical activity is illegal.</p>
 </details>
 
-<details className="bg-white p-4 rounded-lg shadow-md" open>
-  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Upcoming Feature: Advanced Mode</summary>
-  <p className="mt-2 text-gray-700">Soon, we will introduce an advanced mode that allows users to specify the desired card brand, expiry date, and other details. This mode will enhance the flexibility and functionality of the generator for more tailored testing scenarios.</p>
-</details>
+
 
         </div>
       </div>
