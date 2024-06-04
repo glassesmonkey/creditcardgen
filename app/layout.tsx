@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="fo-verify" content="fa3aa522-d1c9-4803-a016-b5763fe27f6c" />
       <body className={inter.className}>{children}</body>
     </html>
   );
