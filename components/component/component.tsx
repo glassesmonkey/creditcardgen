@@ -759,6 +759,10 @@ export function Component() {
   <summary className="font-semibold text-[#6a11cb] cursor-pointer">Is it legal to use a Credit Card Generator?</summary>
   <p className="mt-2 text-gray-700">Yes, using a credit card generator for legitimate purposes such as testing and educational demonstrations is legal. However, using it for fraud or any unethical activity is illegal.</p>
 </details>
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">How does the Deepwoken Builder Tool relate to a Credit Card Generator site?</summary>
+  <p className="mt-2 text-gray-700">Just as a Credit Card Generator site provides tools for financial planning and management, the Deepwoken Builder Tool serves as a creative asset for Deepwoken players, offering a platform to strategically plan and optimize in-game character builds. Much like managing finances, the tool assists players in making informed decisions to enhance their gameplay experiences within the world of Deepwoken. For more information, visit <a href="https://deepwokenbuilder.com" target="_blank">deepwokenbuilder.com</a>.</p>
+</details>
 
 
 
