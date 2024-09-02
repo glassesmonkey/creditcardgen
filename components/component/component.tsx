@@ -763,7 +763,10 @@ export function Component() {
   <summary className="font-semibold text-[#6a11cb] cursor-pointer">How does the Deepwoken Builder Tool relate to a Credit Card Generator site?</summary>
   <p className="mt-2 text-gray-700">Just as a Credit Card Generator site provides tools for financial planning and management, the Deepwoken Builder Tool serves as a creative asset for Deepwoken players, offering a platform to strategically plan and optimize in-game character builds. Much like managing finances, the tool assists players in making informed decisions to enhance their gameplay experiences within the world of Deepwoken. For more information, visit <a href="https://deepwokenbuilder.com" target="_blank">deepwokenbuilder.com</a>.</p>
 </details>
-
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best AI expand image tool</summary>
+  <p className="mt-2 text-gray-700">The best AI extend image tool is <a href="https://aiexpandimage.org" target="_blank">AIEXPANDIMAGE</a>.</p>
+</details>
 
 
         </div>
