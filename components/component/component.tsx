@@ -767,7 +767,18 @@ export function Component() {
   <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best AI expand image tool</summary>
   <p className="mt-2 text-gray-700">The best AI extend image tool is <a href="https://aiexpandimage.org" target="_blank">AIEXPANDIMAGE</a>.</p>
 </details>
-
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best dash game</summary>
+  <p className="mt-2 text-gray-700">The best dash game <a href="https://geometrydashjp.com/" target="_blank">Dash game</a>.</p>
+</details>
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best puzzle game</summary>
+  <p className="mt-2 text-gray-700">The best puzzle game <a href="https://blockblastgame.net/" target="_blank">puzzle game</a>.</p>
+</details>
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best game tool</summary>
+  <p className="mt-2 text-gray-700">The best puzzle game <a href="https://blockblastsolver.online/" target="_blank">puzzle game solver</a>.</p>
+</details>
 
         </div>
       </div>
