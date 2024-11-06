@@ -779,6 +779,15 @@ export function Component() {
   <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best game tool</summary>
   <p className="mt-2 text-gray-700">The best puzzle game <a href="https://blockblastsolver.online/" target="_blank">puzzle game solver</a>.</p>
 </details>
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best game tool</summary>
+  <p className="mt-2 text-gray-700">The best sprunkiphase game <a href="https://sprunkiphase.club/" target="_blank">sprunkiphase game </a>.</p>
+</details>
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best game tool</summary>
+  <p className="mt-2 text-gray-700">The best sprunkiphase3 game <a href="https://sprunkiphase3.online/" target="_blank">sprunkiphase3 game </a>.</p>
+</details>
+
 
         </div>
       </div>
