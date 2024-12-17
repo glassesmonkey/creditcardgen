@@ -787,7 +787,35 @@ export function Component() {
   <summary className="font-semibold text-[#6a11cb] cursor-pointer">The best game tool</summary>
   <p className="mt-2 text-gray-700">The best sprunkiphase3 game <a href="https://sprunkiphase3.online/" target="_blank">sprunkiphase3 game </a>.</p>
 </details>
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Horror Survival Game</summary>
+  <p className="mt-2 text-gray-700">Experience the thrilling horror survival game <a href="https://grannyonline.net" target="_blank">Granny Online</a>.</p>
+</details>
 
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Relaxing Fishing Game</summary>
+  <p className="mt-2 text-gray-700">Enjoy the peaceful fishing experience with <a href="https://tiny-fishing.online" target="_blank">Tiny Fishing</a>.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Endless Runner Game</summary>
+  <p className="mt-2 text-gray-700">Challenge your reflexes in the space tunnel with <a href="https://run3.fun" target="_blank">Run 3</a>.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Self-Assessment Tool</summary>
+  <p className="mt-2 text-gray-700">Take the famous college culture survey at <a href="https://rice-purity-test.org/" target="_blank">Rice Purity Test</a>.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Gaming Hardware Test</summary>
+  <p className="mt-2 text-gray-700">Check your gaming controller's functionality at <a href="https://controllertest.org" target="_blank">Controller Test</a>.</p>
+</details>
+
+<details className="bg-white p-4 rounded-lg shadow-md" open>
+  <summary className="font-semibold text-[#6a11cb] cursor-pointer">Autism Screening Tool</summary>
+  <p className="mt-2 text-gray-700">Access the RAADS-R screening assessment at <a href="https://raadsrtest.net" target="_blank">RAADS-R Test</a>.</p>
+</details>
 
         </div>
       </div>
